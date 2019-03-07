@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 1000px;
+}
+
+.bloc-in {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+header {
+  height: 90vh;
+
+  background-image: url('images/anastasia-petrova-193818-unsplash.jpg'),
+    linear-gradient(
+      to bottom,
+      rgba(41, 44, 53, 0.9) 0%,
+      rgba(71, 73, 84, 0.9) 10%,
+      rgba(78, 80, 92, 0.9) 100%
+    );
+
+  background-blend-mode: multiply;
+  background-size: Cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+header .bloc-in {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .nav-l {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+nav .nav-l h1 {
+  padding: 0 40px 0 0;
+}
+
+nav .nav-l ul {
+  display: flex;
+}
+
+nav .nav-l ul li {
+  list-style: none;
+  padding: 0 40px;
+}
+
+nav .nav-r {
+}
+
+nav button.buildtrip {
+  background-color: #166fd5;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content h2 span.h2-small {
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.content h2 span.h2-big {
+  font-size: 80px;
+  line-height: 85px;
+}
+
+.content h3 {
+  margin-top: 20px;
+  margin-bottom: 15vh;
+}
+
+.sb {
+  margin-top: -60px;
+  height: 120px;
+}
+
+.searchbar {
+  display: flex;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px 20px;
+}
+
+.searchbar .bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.searchbar .bar .input-bloc {
+  flex: 2;
+  padding: 20px;
+}
+
+.searchbar .bar .input-nb {
+  flex: 0;
+}
+
+.searchbar .bar .input-bloc input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.searchbar .search-button {
+  background-color: #166fd5;
+  height: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.recommened {
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.reco-l,
+.reco-r {
+  flex: 1;
+}
+
+.reco-r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recommened h4 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+button.alltrip {
+  background-color: transparent;
+  color: #166fd5;
+  border: #166fd5 2px solid;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.articles {
+}
+
+.articles .art-solo {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.articles .art-solo:nth-of-type(2n) {
+  flex-direction: row-reverse;
+}
+
+.articles .art-solo .art-img {
+  padding-right: 50px;
+  flex: 1 1 0%;
+}
+
+.articles .art-solo:nth-of-type(2n) .art-img {
+  padding-right: 0px;
+  padding-left: 50px;
+}
+
+.articles .art-solo .art-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.articles .art-solo .art-text {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.articles .art-solo .art-text h5 {
+  color: #888;
+  font-size: 18px;
+}
+
+.articles .art-solo .art-text h4 {
+  font-size: 35px;
+  margin: 30px 0;
+}
+
+.articles .art-solo .art-text a {
+  color: #166fd5;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.destinations {
+  text-align: center;
+}
+
+.destinations h4 {
+  font-size: 30px;
+}
+
+.destinations p {
+  width: 50vw;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.destinations .photos {
+  /* display: flex; */
+  overflow: hidden;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.destinations .photos-in {
+  display: flex;
+  overflow-x: scroll;
+  margin-bottom: -9px;
+}
+
+.destinations .bloc-photo {
+  margin: 40px 10px;
+  flex: 1 0 22%;
+  text-align: left;
+  /* background-image: url('images/jarand-lokeland-142660-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; */
+  position: relative;
+}
+
+.destinations .bloc-photo:hover {
+}
+
+.destinations .bloc-photo img {
+  width: 100%;
+}
+
+.destinations .bloc-photo .content-dest {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  bottom: 6px;
+}
+
+.destinations .bloc-photo .content-dest:hover {
+}
+
+.destinations .bloc-photo .content-dest h5 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.destinations .bloc-photo .content-dest p {
+  width: auto;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.destinations .bloc-photo .content-dest a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.explore {
+  padding: 50px 0;
+}
